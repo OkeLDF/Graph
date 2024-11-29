@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Graph</title>
+</head>
+
+<body>
+    <div style="
+            display: flex;
+            place-content: center;
+            place-items: center;
+            flex-direction: column;
+            font-family: Georgia, Cochin, Times, 'Times New Roman', serif;
+            color: #555;
+        "
+    >
+        <h1>Graph visualization</h1>
+
+        <div
+            style="margin-bottom: 1rem; display: flex; gap: 2rem;"
+        >
+            <label for="">
+                <span>Source</span>
+                <input id="sourceInput" type="text">
+            </label>
+
+            <label for="">
+                <span>Target</span>
+                <input id="targetInput" type="text">
+            </label>
+
+            <button onclick="addEdge()">Add</button>
+        </div>
+
+        <div id="container" style="background-color: #fff; border: 1px solid #aaa; width: fit-content; height: fit-content;"></div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
